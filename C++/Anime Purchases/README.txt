@@ -3,5 +3,6 @@ Currency exchange rates change daily due to several reasons such as politics, na
 You will play the role of a secluded anime addict determined to support the growth of the anime industry in the western world, but you aim to spend as little as you can for your anime related purchases given some constraints.
 
 Files:
+- Anime Purchases (main code)
 - large_params (daily currency exchange rate)
 - large_purchases (anime prices)
