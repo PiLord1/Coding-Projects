@@ -1,3 +1,8 @@
-arr=[1,1,2,3,4,5,2,7,3,5,5,5,2,1]
+arr = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    # adding the element
+    arr.append(ele) 
 arr_new=set(arr)
 print(arr_new)
