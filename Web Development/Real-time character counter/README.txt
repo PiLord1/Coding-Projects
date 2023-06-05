@@ -1,1 +1,0 @@
-Link to website: https://real-time-character-counter.000webhostapp.com/
