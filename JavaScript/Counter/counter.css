@@ -1,0 +1,18 @@
+#myNumber {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+}
+
+.buttons{
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    background-color: aquamarine;
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
