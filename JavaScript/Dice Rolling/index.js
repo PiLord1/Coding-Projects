@@ -1,14 +1,20 @@
-const min = 1;
-const max = 6;
-let money = 0;
+let rollBtn = document.getElementById("roll");
+let inputNumber = document.getElementById("inputNumber");
+let resultDice = document.getElementById("resultDice");
+let resultImage = document.getElementById("image-container");
+let values = [];
+let images = [];
 
-document.getElementById("randomize").onclick = function(){
-    let number = Math.floor(Math.random() * (max)) + min;
-    document.getElementById("myNumber").textContent = number;
+rollBtn.onclick = function() {
+    inputNumber = inputNumber.value;
 
-    if (number === 6){
-        money += 300;
-        document.getElementById("money").textContent = `Money: $ ${money}`
-
+    // Generate random number for each dice between 1 to 6
+    for (i = 0; i < inputNumber; i++) {
+        let newRandomDice = Math.floor(Math.random() * 6) + 1;
+        values.push(newRandomDice);
+        images.push(`<img src = "dice/${newRandomDice}.jpg">`);
     }
+
+    resultDice.textContent = `dice: ${values.join(", ")}`;
+    resultImage.innerHTML = images.join("");
 }
